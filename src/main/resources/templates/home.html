@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+</head>
+<body>
+<h1>Wpisz miasto dla którego chcesz sprawdzić pogodę</h1>
+
+<form th:action="@{/city}" method="post">
+    <input type="text" th:name="city_name">
+    <button type="submit">Sprawdź!</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pogoda</title>
+</head>
+<body>
+
+<div>
+    <p th:text="|Pogoda dla miasta: ${weather.name}|"></p>
+    <p th:text="|Temperatura: ${weather.main.temp}|"></p>
+    <p th:text="|Ciśnienie: ${weather.main.pressure}|"></p>
+    <p th:text="|Wilgotność: ${weather.main.humidity}|"></p>
+</div>
+<a href="/">Powrót na strone główną</a>
+</body>
+</html>
